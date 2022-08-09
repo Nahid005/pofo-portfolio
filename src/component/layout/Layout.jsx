@@ -20,7 +20,7 @@ function Layout () {
                     </div>
                     <div className={classes.socialIcon}>
                         <ul>
-                            <li> </li>
+                            
                         </ul>
                     </div>
                 </nav>
