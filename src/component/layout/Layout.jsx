@@ -1,7 +1,11 @@
 
 import classes from './Layout.module.css'
+import App from '../layout/Layout'
 
-function Layout () {
+function Layout (props) {
+
+    console.log(props)
+
     return(
         <div>
             <header>
@@ -26,7 +30,7 @@ function Layout () {
                 </nav>
             </header>
             <main>
-                
+                {props.children}
             </main>
             <footer>
                 <div className={classes.footerTop}>
