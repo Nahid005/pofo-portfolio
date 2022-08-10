@@ -1,10 +1,7 @@
-
+import {Link} from '@reach/router'
 import classes from './Layout.module.css'
-import App from '../layout/Layout'
 
 function Layout (props) {
-
-    console.log(props)
 
     return(
         <div>
@@ -15,11 +12,11 @@ function Layout (props) {
                     </div>
                     <div className={classes.navItems}>
                         <ul>
-                            <li> Home </li>
-                            <li> About </li>
-                            <li> Portfolio </li>
-                            <li> Blog </li>
-                            <li> Contact </li>
+                            <Link to='/'> Home </Link>
+                            <Link to='/about'> About </Link>
+                            <Link to='/portfolio'> Portfolio </Link>
+                            <Link to='/blog'> Blog </Link>
+                            <Link to='/contact'> Contact </Link>
                         </ul>
                     </div>
                     <div className={classes.socialIcon}>
